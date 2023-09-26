@@ -21,7 +21,6 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="22sp"
-            android:textColor="#363A43"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             tools:text="What country does flag belong to?" />
@@ -30,7 +29,6 @@
             android:id="@+id/ivImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             tools:src="@drawable/ic_flag_of_denmark"
@@ -66,12 +64,60 @@
         </LinearLayout>
 
 
-        <Button
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tvOptionOne"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Argentina"
-            android:backgroundTint="@color/lightgray"
-            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7a8089"
+            android:textSize="18sp"
+            tools:text="Apple"/>
+        <TextView
+            android:id="@+id/tvOptionTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7a8089"
+            android:textSize="18sp"
+            tools:text="Apple"/>
+        <TextView
+            android:id="@+id/tvOptionThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7a8089"
+            android:textSize="18sp"
+            tools:text="Apple"/>
+        <TextView
+            android:id="@+id/tvOptionFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7a8089"
+            android:textSize="18sp"
+            tools:text="Apple"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="SUBMIT"/>
+
+
 
     </LinearLayout>
 
