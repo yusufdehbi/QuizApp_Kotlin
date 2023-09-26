@@ -3,11 +3,16 @@ package com.example.quizapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 
-class QuizQuestionsActivity : AppCompatActivity() {
+class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
+
+    private var mCurrentPosition: Int = 1
+    private var mQuestionList : ArrayList<Question>? = null
+    private var mSelectedOptionOptionPosition = 0
 
     private var progressBar: ProgressBar? = null
     private var tvProgress: TextView? = null
@@ -34,10 +39,14 @@ class QuizQuestionsActivity : AppCompatActivity() {
 
 
 
+        setQuestion()
+    }
+
+    private fun setQuestion() {
         val questionList = Constants.getQuestions()
         Log.i("QuestionsList size is", "${questionList.size}")
 
-        for(i in questionList){
+        for (i in questionList) {
             Log.e("Questions", i.question)
         }
 
@@ -51,5 +60,9 @@ class QuizQuestionsActivity : AppCompatActivity() {
         tvOptionTwo?.text = question.optionTwo
         tvOptionThree?.text = question.optionThree
         tvOptionFour?.text = question.optionFour
+    }
+
+    override fun onClick(p0: View?) {
+        TODO("Not yet implemented")
     }
 }
