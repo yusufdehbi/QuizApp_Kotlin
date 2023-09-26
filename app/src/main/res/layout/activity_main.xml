@@ -57,21 +57,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="e.g. Jhon"
                     android:inputType="textCapWords"
-                    android:textColor="#363a43"
-                    android:textColorHint="#7a8089"
                     />
+
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/btnStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Start"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
                 android:background="@color/design_default_color_primary"
                 />
         </LinearLayout>
