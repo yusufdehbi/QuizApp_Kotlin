@@ -160,8 +160,6 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                     }
                 } else {
                     val question = mQuestionList?.get(mCurrentPosition - 1)
-                    Log.i("Question object", question.toString())
-                    Log.i("Current Questio Index", "$mCurrentPosition")
                     if (question!!.correctAnswer != mSelectedOptionOptionPosition){
                         answerView(mSelectedOptionOptionPosition, R.drawable.wrong_option_border_bg)
                     }
